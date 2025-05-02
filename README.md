@@ -46,7 +46,7 @@ microservices-project/
 │   ├── package.json
 │   └── Dockerfile
 │
-├── book-service/
+├── store-service/
 │   ├── index.js
 │   ├── package.json
 │   └── Dockerfile
