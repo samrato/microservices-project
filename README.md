@@ -1,4 +1,4 @@
- Store Management Microservices Backend
+📦 Store Management Microservices Backend
 
 This is a Node.js + Express.js microservices backend built for a React Native mobile application that manages store-related data like authentication, inventory (store items), and user profiles.
 
@@ -35,6 +35,7 @@ User Service	3003	Manages user profiles and settings
     📦 Dockerized Services: Simple deployment with one command
 
 🗂 Folder Structure
+
 microservices-project/
 │
 ├── nginx/
@@ -56,12 +57,13 @@ microservices-project/
 │   └── Dockerfile
 │
 └── docker-compose.yml       # Multi-service config
-4. Access Services
+
+🔗 Access Services
 
     API Gateway (NGINX): http://localhost
 
     Auth: http://localhost/api/auth/test
 
-    store: http://localhost/api/store/test
+    Store: http://localhost/api/store/test
 
     Users: http://localhost/api/users/test
