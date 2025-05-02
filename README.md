@@ -1,6 +1,6 @@
-📚 Book Management Microservices Backend
+📚 Store Management Microservices Backend
 
-This is a Node.js + Express microservices backend for a React Native mobile application that handles book-related data. It is containerized using Docker, orchestrated with Docker Compose, and uses NGINX as a reverse proxy. Each microservice runs independently and serves a single purpose.
+This is a Node.js + Express microservices backend for a React Native mobile application that handles stores-related data. It is containerized using Docker, orchestrated with Docker Compose, and uses NGINX as a reverse proxy. Each microservice runs independently and serves a single purpose.
 🛠 Tech Stack
 
     Node.js + Express.js
