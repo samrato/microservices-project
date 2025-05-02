@@ -1,0 +1,27 @@
+version: "3.8"
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - auth-service
+      - store-service
+      - user-service
+
+  auth-service:
+    build: ./auth-service
+    ports:
+      - "3001:3001"
+
+  store-service:
+    build: ./store-service
+    ports:
+      - "3002:3002"
+
+  user-service:
+    build: ./user-service
+    ports:
+      - "3003:3003"
