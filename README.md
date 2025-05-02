@@ -1,36 +1,38 @@
-📚 Store Management Microservices Backend
+ Store Management Microservices Backend
 
-This is a Node.js + Express microservices backend for a React Native mobile application that handles stores-related data. It is containerized using Docker, orchestrated with Docker Compose, and uses NGINX as a reverse proxy. Each microservice runs independently and serves a single purpose.
+This is a Node.js + Express.js microservices backend built for a React Native mobile application that manages store-related data like authentication, inventory (store items), and user profiles.
+
+Each microservice is containerized using Docker, orchestrated using Docker Compose, and routed through NGINX as a reverse proxy.
 🛠 Tech Stack
 
-    Node.js + Express.js
+    Node.js + Express.js – Backend framework
 
-    MongoDB + Mongoose
+    MongoDB + Mongoose – Database for each service
 
-    NGINX (reverse proxy)
+    Docker & Docker Compose – Containerization and orchestration
 
-    Docker & Docker Compose
+    NGINX – API gateway and reverse proxy
 
-    React Native (Frontend Target)
+    RESTful APIs – Standardized communication
 
-    RESTful API
+    React Native – Target frontend (mobile app)
 
-📁 Microservices
+📦 Microservices Overview
 Service	Port	Description
-Auth Service	3001	Handles authentication and JWT
-Book Service	3002	Handles CRUD operations on books
-User Service	3003	Handles user profiles and settings
-🧾 Features
+Auth Service	3001	Handles user login and JWT auth
+Store Service	3002	Manages CRUD operations on products/items
+User Service	3003	Manages user profiles and settings
+✨ Features
 
-    🔐 Authentication (JWT-based)
+    🔐 JWT Authentication with protected routes
 
-    📚 Add, Fetch, Delete Books
+    🛍️ Store Item Management: Add, fetch, and delete items
 
-    👤 User profile management
+    👤 User Profiles: Fetch and update user info
 
-    🌍 NGINX for unified API access
+    🌐 NGINX Gateway: All services accessible through a single port
 
-    🔄 Dockerized for easy deployment
+    📦 Dockerized Services: Simple deployment with one command
 
 🗂 Folder Structure
 microservices-project/
